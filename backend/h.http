@@ -1,0 +1,58 @@
+POST http://localhost:4000/upload
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="product"; filename="hero_image.png"
+Content-Type: image/png
+
+< C:\Users\LOQ\Desktop\E-commerce\frontend\src\Components\Assets\hero_image.png
+--boundary--
+
+### Add Product
+POST http://localhost:4000/addproduct
+Content-Type: application/json
+
+{
+  "name": "Aashish unique piece",
+  "image": "http://localhost:4000/images/product_1742752855538.png",
+  "category": "black football shorts",
+  "new_price": 180.99,
+  "old_price": 150.00
+}
+
+### Removing product
+POST http://localhost:4000/removeproduct
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+### Fetching all_products
+GET http://localhost:4000/all_products
+
+### checking signup endpoint
+
+POST http://localhost:4000/signup
+Content-Type: application/json
+
+{
+  "username": "JohnDoe",
+  "password":"123456",
+  "email":"aaditya1@gmail.com"
+}
+
+### Checking login endpoint
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "email":"aaditya@gmail.com",
+  "password":"123456"
+}
+
+### newproducts check
+GET http://localhost:4000/newcollection
+
+### popular in women check
+GET http://localhost:4000/popularinwomen

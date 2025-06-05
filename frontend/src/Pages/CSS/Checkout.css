@@ -1,0 +1,151 @@
+.checkout-container {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff, #e3e3e3);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkout-container h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+}
+
+.checkout-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-container input,
+.checkout-container textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+}
+
+.checkout-container input:focus,
+.checkout-container textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+.checkout-container textarea {
+    resize: none;
+    height: 120px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.payment-options label {
+    cursor: pointer;
+}
+
+.checkout-container button {
+    background: #007bff;
+    color: white;
+    padding: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.checkout-container button:hover {
+    background: #0056b3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-container button:active {
+    transform: translateY(2px);
+}
+
+/* Mail Animation */
+.mail-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.floating-mail {
+    width: 80px;
+    height: 80px;
+    animation: moveInCircle 3s linear infinite;
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg) translate(100px) rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg) translate(100px) rotate(-90deg);
+    }
+    50% {
+        transform: rotate(180deg) translate(100px) rotate(-180deg);
+    }
+    75% {
+        transform: rotate(270deg) translate(100px) rotate(-270deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(100px) rotate(-360deg);
+    }
+}
+
+/* Payment Warning Message */
+.payment-warning {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .checkout-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .checkout-container h2 {
+        font-size: 26px;
+    }
+
+    .checkout-container input,
+    .checkout-container textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .checkout-container button {    
+        font-size: 18px;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,109 @@
+/* General Styling */
+.add-product {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f0f4ff, #d6e4ff);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addproduct-itemfield {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.addproduct-itemfield p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #222;
+}
+
+.addproduct-itemfield input,
+.add-product-selector {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    padding-left: 15px;
+    border: 1px solid #6079ff;
+    outline: none;
+    font-size: 14px;
+    background-color: #eef3ff;
+    transition: 0.3s;
+}
+
+.addproduct-itemfield input:focus,
+.add-product-selector:focus {
+    border-color: #4053ff;
+    box-shadow: 0px 0px 6px rgba(64, 83, 255, 0.5);
+    background-color: #dde7ff;
+}
+
+.addproduct-price {
+    display: flex;
+    gap: 20px;
+}
+
+.addproduct-itemfield select {
+    cursor: pointer;
+    background-color: #eef3ff;
+    color: #333;
+}
+
+/* File Upload Section */
+.addproduct-itemfield label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #4053ff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #dde7ff;
+    transition: 0.3s;
+}
+
+.addproduct-itemfield label:hover {
+    border-color: #6079ff;
+    background-color: #c2d1ff;
+}
+
+.addproduct-thumnail-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px auto;
+    display: block;
+    background: #dde7ff;
+}
+
+/* Submit Button */
+.addproduct-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #ff6f61, #ff3b3b);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.addproduct-btn:hover {
+    background: linear-gradient(135deg, #ff3b3b, #ff6f61);
+    transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .addproduct-price {
+        flex-direction: column;
+    }
+}
